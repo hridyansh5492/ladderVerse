@@ -1,2 +1,2 @@
-# ladderverse
+# ladderVerse
 a snakes and ladders game
