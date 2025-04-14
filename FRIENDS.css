@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.body{
+background: url("24745.jpg");
+font-family: 'Roboto', sans-serif;
+min-height: 100vh;
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.body .h1
+{
+    position: absolute;
+    top: 250px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+
+#board{
+    background: linear-gradient(rgb(184, 188, 179), rgb(204, 244, 7));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.f1
+{
+    background-image: url("1goli.svg");
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.f1 .txt
+{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 115px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f2
+{
+    background-image: url("2goli.svg");
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.f2 .txt
+{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 115px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f3
+{
+    background-image: url("3goli.svg");
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.f3 .txt
+{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 115px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,4 +1,8 @@
 function back()
 {
-    window.location.href = "homepage.html";
+    window.location.href = "HOME PAGE.HTML";
+}
+function friends()
+{
+    window.location.href = "FRIENDS.HTML";
 }

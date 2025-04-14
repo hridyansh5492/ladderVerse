@@ -6,10 +6,11 @@
     <link rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/1c/8d/d1/1c8dd173-c737-a781-82eb-d5a71be4d76a/source/256x256bb.jpg">
     <title>ladderVerse Menu</title>
     <link rel="stylesheet" href="chooseplayercss.css" />
+    <script src="choose.js"></script>
   </head>
   <body>
     <div class="background">
-      <button class="back-button" onclick="history.back()">&#8592; Back</button>
+      <button class="back-button" onclick="back()">&#8592; Back</button>
       <div class="board">
         <div class="button-container">
           <button class="menu-button">
@@ -24,7 +25,7 @@
             </div>
           </button>
 
-          <button class="menu-button">
+          <button class="menu-button" onclick="friends()">
             <div class="button-side">
               <span class="icon">&#128100;</span>
               <span class="label">YOU</span>
