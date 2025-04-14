@@ -5,14 +5,10 @@ function validate()
     if(username == "admin" && password == "admin")
     {
         alert("Sign In Sucessfully.");
-        window.location.href = "choose.html";
-    }
-    if(username == "" && password == "")
-    {
-        alert("Please enter your details.");
+        window.location.href = "HOME PAGE.HTML";
     }
     else
     {
-        alert("Sign In Failed.");
+        alert("Please enter your details.Sign In Failed.");
     }
 }
