@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/1c/8d/d1/1c8dd173-c737-a781-82eb-d5a71be4d76a/source/256x256bb.jpg">
+  <title>ladderVerse Sign In</title>
+  <link rel="stylesheet" href="SIGNINPAGEcss.css" />
+  <script src="signin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">ladderVerse</div>
+      <img src="https://w7.pngwing.com/pngs/786/402/png-transparent-video-game-toy-organism-google-play-toy-game-photography-video-game-thumbnail.png" alt="Snake Game Image" />
+      <div class="overlay-text">
+        <h1>SIGN IN TO YOUR <span>ADVENTURE!</span></h1>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="form-box">
+        <h2>SIGN IN</h2>
+        <p class="subtitle">Sign in with <br> username: <b>admin</b> <br> and <br> password: <b>admin</b></p>
+
+        <form>
+          <div class="input-group" action="SIGN IN PAGE .HTML" method="POST">
+            <span class="icon">
+              <!-- User Icon SVG -->
+              <svg height="16" width="16" viewBox="0 0 24 24" fill="#888">
+                <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+              </svg>
+            </span>
+            <input type="text" placeholder="user name" id="username"/>
+          </div>
+
+          <div class="input-group">
+            <span class="icon">
+              <!-- Email Icon SVG -->
+              <svg height="16" width="16" viewBox="0 0 24 24" fill="#888">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </span>
+            <input type="password" placeholder="password" id="password"/>
+          </div>
+
+          <button type="submit" value="Log In" onclick="validate(event)">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
