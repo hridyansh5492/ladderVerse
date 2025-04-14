@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  position: relative;
+  width: 50%;
+  display: none;
+  background-color: #000;
+}
+
+.left-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.overlay-text span {
+  color: #a3e635;
+}
+
+@media screen and (min-width: 1024px) {
+  .left-panel {
+    display: block;
+  }
+}
+
+.right-panel {
+  width: 100%;
+  max-width: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000000, #444444);
+  color: white;
+  cursor: pointer;
+}
+
+
+.social-section {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background-color: #333;
+  color: white;
+}
+
+.terms {
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #999;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
