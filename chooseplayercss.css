@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .background {
+    background: url("https://img.freepik.com/premium-vector/friendly-snake-beside-wooden-signboard_1308-167245.jpg?uid=R195822242&ga=GA1.1.1149380048.1744435045&semt=ais_hybrid&w=740") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fef08a;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-button:hover {
+    background-color: #fde047;
+  }
+  
+  
+  .board {
+    position: absolute;
+    top: 17%;
+    left: 7%;
+    width: 32%;
+    height: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  .button-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.5rem;
+  }
+  
+  .menu-button {
+    background-color: #fef08a;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-button:hover {
+    transform: scale(1.03);
+  }
+  
+  .button-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon {
+    font-size: 18px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 768px) {
+    .board {
+      width: 80%;
+      height: auto;
+      top: 25%;
+      left: 10%;
+    }
+  
+    .button-container {
+      gap: 2rem;
+    }
+  
+    .menu-button {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
