@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.dribbble.com/userupload/34036251/file/original-b6d319bb7901bd001e4103e1d7c37f67.jpg?resize=800x600&vertical=center');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.header {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left a,
+.nav-right a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-right input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.hero-section {
+  text-align: center;
+}
+.hero-section img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+.hero-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.hero-section p {
+  margin-bottom: 1rem;
+}
+.hero-section button {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+
+.more-games {
+  background-color: rgba(128, 0, 128, 0.75);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+
+.instructions {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  width: 100%;
+}
+.instructions h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.instructions p {
+  margin-bottom: 1rem;
+}
+.instructions ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.user-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
