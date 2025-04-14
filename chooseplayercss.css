@@ -64,18 +64,21 @@
   }
   
   .menu-button {
-    background-color: #fef08a;
-    border: none;
-    border-radius: 10px;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    background-color: #ecde74;
+    border-radius: 20px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.2s ease;
+    
   }
+
   
   .menu-button:hover {
     transform: scale(1.03);
@@ -106,12 +109,12 @@
     }
   
     .button-container {
-      gap: 2rem;
+      gap: 10rem;
     }
   
     .menu-button {
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
   }
   
