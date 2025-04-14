@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sign In</title>
+  <link rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/1c/8d/d1/1c8dd173-c737-a781-82eb-d5a71be4d76a/source/256x256bb.jpg">
+  <title>ladderVerse Sign In</title>
   <link rel="stylesheet" href="SIGNINPAGEcss.css" />
   <script src="signin.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="left-panel">
-      <div class="logo">Ladderverse</div>
+      <div class="logo">ladderVerse</div>
       <img src="https://w7.pngwing.com/pngs/786/402/png-transparent-video-game-toy-organism-google-play-toy-game-photography-video-game-thumbnail.png" alt="Snake Game Image" />
       <div class="overlay-text">
         <h1>SIGN IN TO YOUR <span>ADVENTURE!</span></h1>
@@ -22,7 +23,7 @@
         <p class="subtitle">Sign in with <br> username: <b>admin</b> <br> and <br> password: <b>admin</b></p>
 
         <form>
-          <div class="input-group" method="POST">
+          <div class="input-group" action="SIGN IN PAGE .HTML" method="POST">
             <span class="icon">
               <!-- User Icon SVG -->
               <svg height="16" width="16" viewBox="0 0 24 24" fill="#888">
@@ -42,7 +43,7 @@
             <input type="password" placeholder="password" id="password"/>
           </div>
 
-          <button type="submit" value="Log In" onclick="validate()">Sign In</button>
+          <button type="submit" value="Log In" onclick="validate(event)">Sign In</button>
         </form>
       </div>
     </div>
