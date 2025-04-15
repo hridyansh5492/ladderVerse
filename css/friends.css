@@ -5,7 +5,7 @@
 }
 
 .body{
-background: url("24745.jpg");
+background: url("../images/24745.jpg");
 font-family: 'Roboto', sans-serif;
 min-height: 100vh;
 background-size: 100vw 100vh;
@@ -37,7 +37,7 @@ align-items: center;
 
 .f1
 {
-    background-image: url("1goli.svg");
+    background-image: url("../images/1goli.svg");
     height: 200px;
     width: 200px;
     margin: auto;
@@ -55,7 +55,7 @@ align-items: center;
 
 .f2
 {
-    background-image: url("2goli.svg");
+    background-image: url("../images/2goli.svg");
     height: 200px;
     width: 200px;
     margin: auto;
@@ -73,7 +73,7 @@ align-items: center;
 
 .f3
 {
-    background-image: url("3goli.svg");
+    background-image: url("../images/3goli.svg");
     height: 200px;
     width: 200px;
     margin: auto;

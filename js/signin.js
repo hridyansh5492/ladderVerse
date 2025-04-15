@@ -7,7 +7,7 @@ function validate(event)
     if(username == "admin" && password == "admin")
     {
         alert("Sign In Sucessfully.");
-        window.location.href = "HOME PAGE.HTML";
+        window.location.href = "homepage.html";
     }
     else
     {
