@@ -139,10 +139,10 @@ function play(player, psum, correction, num) {
         winSound.play()
         music.pause()
         if (player == 'p1') {
-            alert("Red Won !!")
+            alert("Computer Won !!")
         }
         else if (player == 'p2') {
-            alert("Yellow Won !!")
+            alert("Player Won !!")
         }
         location.reload()
     }
@@ -187,6 +187,21 @@ function play(player, psum, correction, num) {
 }
 
 
+function botTurn() {
+    setTimeout(function () {
+        rollingSound.play();
+        let num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        document.getElementById("dice").innerText = num;
+        document.getElementById("diceCnt").src = `../images/dice/${num}.svg`;
+
+        play('p1', 'p1sum', 0, num);
+
+        tog++;
+        document.getElementById('tog').innerText = "Player's Turn: ";
+    }, 1000);
+}
+
+
 document.getElementById("diceBtn").addEventListener("click", function () {
     rollingSound.play()
     num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
@@ -195,16 +210,16 @@ document.getElementById("diceBtn").addEventListener("click", function () {
 
 
     if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Yellow's Turn : "
-        play('p1', 'p1sum', 0, num)
-
+        document.getElementById('tog').innerText = "Player's Turn : "
+        play('p1', 'p1sum', 0, num);
+        tog++;
     }
 
     else if (tog % 2 == 0) {
-        document.getElementById('tog').innerText = "Red's Turn : "
+        document.getElementById('tog').innerText = "Computer's Turn : "
 
-        play('p2', 'p2sum', 55, num)
-
+        botTurn();
+        tog;
     }
 
     tog = tog + 1
