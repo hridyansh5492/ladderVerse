@@ -15,15 +15,6 @@ justify-content: center;
 align-items: center;
 }
 
-.body .h1
-{
-    position: absolute;
-    top: 250px;
-    font-weight: bolder;
-    color: white;
-}
-
-
 
 #board{
     background: linear-gradient(rgb(184, 188, 179), rgb(204, 244, 7));
@@ -31,8 +22,9 @@ align-items: center;
     height: 92vmin;
     border: 2px solid black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 100px;
 }
 
 .f1
@@ -41,6 +33,7 @@ align-items: center;
     height: 200px;
     width: 200px;
     margin: auto;
+    border-radius: 50px;
 }
 
 .f1 .txt
@@ -59,6 +52,7 @@ align-items: center;
     height: 200px;
     width: 200px;
     margin: auto;
+    border-radius: 50px;
 }
 
 .f2 .txt
@@ -77,6 +71,7 @@ align-items: center;
     height: 200px;
     width: 200px;
     margin: auto;
+    border-radius: 50px;
 }
 
 .f3 .txt

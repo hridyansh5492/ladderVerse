@@ -5,25 +5,16 @@ let music=new Audio('../audio/music.mp3')
 
 let p1sum = 0
 let p2sum = 0
+let p3sum = 0
+
 music.loop=true;
 music.play()
-// Function to disable scrolling
+
 function disableScrolling() {
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden';
 }
-
-// Function to enable scrolling
-function enableScrolling() {
-    document.body.style.overflow = '';
-    document.documentElement.style.overflow = '';
-}
-
-// Call disableScrolling when the game starts
 disableScrolling();
-
-// Example: Call enableScrolling when the game ends or is paused
-// enableScrolling();
 
 function play(player, psum, correction, num) {
     let sum
@@ -33,7 +24,6 @@ function play(player, psum, correction, num) {
 
         if (p1sum > 100) {
             p1sum = p1sum - num
-            // sum = p1sum
         }
 
         if (p1sum == 5) {
@@ -68,9 +58,6 @@ function play(player, psum, correction, num) {
         }
 
         sum = p1sum;
-
-
-
     }
 
     if (psum == 'p2sum') {
@@ -79,9 +66,8 @@ function play(player, psum, correction, num) {
 
         if (p2sum > 100) {
             p2sum = p2sum - num
-            // sum = p2sum
         }
-        
+
         if (p2sum == 5) {
             p2sum = 24
         }
@@ -113,46 +99,77 @@ function play(player, psum, correction, num) {
             p2sum = 13
         }
 
-
         sum = p2sum;
-
-
-
     }
 
+    if (psum == 'p3sum') {
+
+        p3sum = p3sum + num
+
+        if (p3sum > 100) {
+            p3sum = p3sum - num
+        }
+
+        if (p3sum == 5) {
+            p3sum = 24
+        }
+        if (p3sum == 12) {
+            p3sum = 33
+        }
+        if (p3sum == 36) {
+            p3sum = 75
+        }
+        if (p3sum == 62) {
+            p3sum = 81
+        }
+        if (p3sum == 68) {
+            p3sum = 87
+        }
+        if (p3sum == 99) {
+            p3sum = 76
+        }
+        if (p3sum == 63) {
+            p3sum = 41
+        }
+        if (p3sum == 71) {
+            p3sum = 49
+        }
+        if (p3sum == 44) {
+            p3sum = 21
+        }
+        if (p3sum == 46) {
+            p3sum = 13
+        }
+
+        sum = p3sum;
+    }
 
     document.getElementById(`${player}`).style.transition = `linear all .5s`
 
-
-
-
-
     if (sum < 10) {
-
         document.getElementById(`${player}`).style.left = `${(sum - 1) * 62}px`
         document.getElementById(`${player}`).style.top = `${-0 * 62 - correction}px`
-
-
     }
 
     else if (sum == 100) {
         winSound.play()
         music.pause()
         if (player == 'p1') {
-            alert("Computer Won !!")
+            alert("Red Won !!")
         }
         else if (player == 'p2') {
-            alert("Player Won !!")
+            alert("Yellow Won !!")
+        }
+        else if (player == 'p3') {
+            alert("Green Won !!")
         }
         location.reload()
     }
 
     else {
-
         numarr = Array.from(String(sum))
-        n1 = eval(numarr.shift())
-        n2 = eval(numarr.pop())
-        // console.log(n1, n2)
+        n1 = parseInt(numarr.shift())
+        n2 = parseInt(numarr.pop())
 
         if (n1 % 2 != 0) {
 
@@ -163,63 +180,42 @@ function play(player, psum, correction, num) {
             else {
                 document.getElementById(`${player}`).style.left = `${(9 - (n2 - 1)) * 62}px`
                 document.getElementById(`${player}`).style.top = `${-n1 * 62 - correction}px`
-
             }
-
         }
         else if (n1 % 2 == 0) {
-            if (n2 == 0) {
 
+            if (n2 == 0) {
                 document.getElementById(`${player}`).style.left = `${(0) * 62}px`
                 document.getElementById(`${player}`).style.top = `${(-n1 + 1) * 62 - correction}px`
             }
             else {
-
                 document.getElementById(`${player}`).style.left = `${(n2 - 1) * 62}px`
                 document.getElementById(`${player}`).style.top = `${-n1 * 62 - correction}px`
             }
-
         }
-
-
-
     }
 }
-
-
-function botTurn() {
-    setTimeout(function () {
-        rollingSound.play();
-        let num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-        document.getElementById("dice").innerText = num;
-        document.getElementById("diceCnt").src = `../images/dice/${num}.svg`;
-
-        play('p1', 'p1sum', 0, num);
-
-        tog++;
-        document.getElementById('tog').innerText = "Player's Turn: ";
-    }, 1000);
-}
-
 
 document.getElementById("diceBtn").addEventListener("click", function () {
     rollingSound.play()
-    num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+    let num = Math.floor(Math.random() * 6) + 1
     document.getElementById("dice").innerText = num
-    document.getElementById("diceCnt").src = `../images/dice/${num}.svg`;
+    document.getElementById("diceCnt").src = `../images/dice/${num}.svg`
 
-
-    if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Player's Turn : "
-        play('p2', 'p2sum', 55, num);
-        tog++;
+    if (tog % 3 == 1) {
+        document.getElementById('tog').innerText = "Yellow's Turn : "
+        play('p1', 'p1sum', 0, num)
     }
 
-    else{
-        document.getElementById('tog').innerText = "Computer's Turn : "
-        setTimeout(() => {
-            botTurn();
-        }, 1000);
+    else if (tog % 3 == 2) {
+        document.getElementById('tog').innerText = "Green's Turn : "
+        play('p2', 'p2sum', 55, num)
     }
 
+    else if (tog % 3 == 0) {
+        document.getElementById('tog').innerText = "Red's Turn : "
+        play('p3', 'p3sum', 110, num)
+    }
+
+    tog = tog + 1
 })
