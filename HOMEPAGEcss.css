@@ -8,7 +8,6 @@ body {
   color: white;
 }
 
-
 .header {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 1rem;
@@ -16,21 +15,24 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.nav-left a,
-.nav-right a {
-  color: white;
-  margin-right: 1rem;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.nav-right input {
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: #2d2d2d;
-  color: white;
-  border: none;
+
+.nav-left h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.imgIco {
+  border-radius: 15%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
 
 .main-content {
   display: flex;
@@ -38,21 +40,22 @@ body {
   align-items: center;
   padding: 2rem;
 }
+
 .hero-section {
   text-align: center;
 }
-.hero-section img {
-  display: block;
-  margin: 0 auto 1rem;
-}
+
 .hero-section h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
 .hero-section p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
+
 .hero-section button {
   background-color: #22c55e;
   color: white;
@@ -60,17 +63,13 @@ body {
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-
-.more-games {
-  background-color: rgba(128, 0, 128, 0.75);
-  padding: 1rem;
-  margin-top: 2rem;
-  border-radius: 0.5rem;
-  text-align: center;
+.hero-section button:hover {
+  background-color: #16a34a;
 }
-
 
 .instructions {
   background-color: rgba(0, 0, 0, 0.5);
@@ -80,19 +79,27 @@ body {
   max-width: 800px;
   width: 100%;
 }
+
 .instructions h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 .instructions p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
+
 .instructions ul {
   list-style-type: disc;
   padding-left: 1.5rem;
 }
 
+.instructions ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
 
 .footer {
   background-color: rgba(0, 0, 0, 0.75);
@@ -100,35 +107,125 @@ body {
   margin-top: 2rem;
   color: white;
 }
+
 .footer-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .footer h3 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
 .footer ul {
   list-style: none;
   padding: 0;
 }
+
 .footer ul li {
   margin-bottom: 0.5rem;
 }
+
 .footer ul li a {
   color: white;
   text-decoration: none;
 }
 
+.footer ul li a:hover {
+  text-decoration: underline;
+}
 
-.user-icon {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-color: white;
-  border-radius: 50%;
-  margin-right: 0.25rem;
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-left h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; 
+  }
+
+  .hero-section p {
+    font-size: 0.9rem; 
+  }
+
+  .hero-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .instructions {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer h3 {
+    font-size: 1rem;
+  }
+
+  .footer ul {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .nav-left h1 {
+    font-size: 1rem; 
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem; 
+  }
+
+  .hero-section p {
+    font-size: 0.9rem; 
+  }
+
+  .hero-section button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem; 
+  }
+
+  .instructions {
+    padding: 1rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer h3 {
+    font-size: 1rem;
+  }
+
+  .footer ul {
+    padding-left: 0;
+  }
 }
