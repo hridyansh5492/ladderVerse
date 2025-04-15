@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; /* Default to column for smaller screens */
+  flex-direction: column;
 }
 
 .left-panel {
@@ -55,19 +55,18 @@ body {
   color: #a3e635;
 }
 
-/* Show the left-panel only on larger screens */
 @media screen and (min-width: 1024px) {
   .left-panel {
     display: block;
-    width: 50%; /* Left panel takes up 50% of the width */
+    width: 50%;
   }
 
   .container {
-    flex-direction: row; /* Layout switches to row for larger screens */
+    flex-direction: row;
   }
 
   .right-panel {
-    width: 50%; /* Right panel also takes up 50% of the width */
+    width: 50%;
   }
 }
 
@@ -134,35 +133,26 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Remove the social section completely */
-.social-section {
-  display: none; /* Hides the social buttons */
-}
 
-.terms {
-  display: none; /* Hides the terms section */
-}
-
-/* Small screen adjustments */
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack panels vertically */
+    flex-direction: column; 
   }
 
   .left-panel {
     display: block;
-    width: 100%; /* Left panel should take up the full width */
-    height: 200px; /* Limit height on small screens */
+    width: 100%; 
+    height: 200px; 
   }
 
   .logo {
-    font-size: 1rem; /* Smaller logo font size */
+    font-size: 1rem;
     top: 10px;
     left: 15px;
   }
 
   .overlay-text h1 {
-    font-size: 1.5rem; /* Smaller heading */
+    font-size: 1.5rem; 
   }
 
   .form-box {
@@ -170,36 +160,14 @@ button[type="submit"] {
   }
 
   .form-box h2 {
-    font-size: 1.8rem; /* Smaller form title */
+    font-size: 1.8rem; 
   }
 
   .input-group input {
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 0.9rem; 
   }
 
   button[type="submit"] {
     padding: 0.75rem;
-    font-size: 0.9rem; /* Slightly smaller button text */
+    font-size: 0.9rem;
   }
-}
-
-/* Mobile Adjustments for extra small screens */
-@media screen and (max-width: 480px) {
-  .form-box {
-    max-width: 100%;
-    padding: 0.5rem; /* Less padding on small screens */
-  }
-
-  .form-box h2 {
-    font-size: 1.6rem; /* Smaller form title */
-  }
-
-  .input-group input {
-    font-size: 0.85rem; /* Smaller input font size */
-  }
-
-  button[type="submit"] {
-    padding: 0.5rem;
-    font-size: 0.85rem; /* Smaller button text */
-  }
-}
