@@ -198,7 +198,7 @@ function botTurn() {
 
         tog++;
         document.getElementById('tog').innerText = "Player's Turn: ";
-    }, 1000);
+    }, 250);
 }
 
 
