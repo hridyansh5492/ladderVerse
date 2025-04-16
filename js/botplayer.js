@@ -5,9 +5,6 @@ let music=new Audio('../audio/music.mp3')
 
 let p1sum = 0
 let p2sum = 0
-
-let isBotPlaying = false;
-
 music.loop=true;
 music.play()
 // Function to disable scrolling
@@ -199,15 +196,13 @@ function botTurn() {
 
         play('p1', 'p1sum', 0, num);
 
-        isBotPlaying = false;
+        tog++;
         document.getElementById('tog').innerText = "Player's Turn: ";
     }, 250);
 }
 
 
 document.getElementById("diceBtn").addEventListener("click", function () {
-    if (isBotPlaying) return;
-
     rollingSound.play()
     num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
     document.getElementById("dice").innerText = num
@@ -218,12 +213,13 @@ document.getElementById("diceBtn").addEventListener("click", function () {
         document.getElementById('tog').innerText = "Player's Turn : "
         play('p2', 'p2sum', 55, num);
         tog++;
+    }
 
-        isBotPlaying = true;
-        document.getElementById("diceBtn").disabled = true;
+    else{
+        document.getElementById('tog').innerText = "Computer's Turn : "
         setTimeout(() => {
             botTurn();
-        }, 500);
+        }, 1000);
     }
 
 })
