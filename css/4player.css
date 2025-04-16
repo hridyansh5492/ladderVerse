@@ -109,11 +109,6 @@ img {
 }
 
 @media (max-width: 1250px) {
-
-  .body{
-    overflow: hidden;
-  }
-
   .board
   {
     resize: both;
