@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
   }
 
   .cont {
@@ -51,7 +52,7 @@
   #p2 {
     z-index: 2;
     position: relative;
-    top: -55px;
+    top: -30px;
     left: -62px;
     transition: all linear 0.5s;
     background-color: rgb(243, 181, 46);
