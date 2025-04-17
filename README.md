@@ -45,14 +45,18 @@ Experience the game in action by visiting the live demo:
 
 ## 📂 Project Structure
 
-ladderverse/ ├── audio/ # Sound effects ├── css/ # Stylesheets ├── images/ # Game assets ├── js/ # Game logic scripts ├── *.html # Game pages by player mode └── README.md # Documentation
-
-yaml
-Copy code
-
-
----
-
+ladderverse/ 
+├── audio/ 
+    # Sound effects
+├── css/
+    # Stylesheets 
+├── images/ 
+    # Game assets 
+├── js/ 
+    # Game logic scripts 
+├── *.html 
+# Game pages by player mode 
+└── README.md
 
 ---
 
