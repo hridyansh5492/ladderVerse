@@ -26,12 +26,10 @@ Experience the game in action by visiting the live demo:
 ## 🖼️ Screenshots
 
 ### 🎮 Player Selection
-![Player Selection](https://user-images.githubusercontent.com/your-screenshot-link1.png)
+![Player Selection](https://github.com/hridyansh5492/ladderverse/blob/main/images/Screenshot%202025-04-17%20184141.png)
 
 ### 🐍 In-Game Board
-![Game Board](https://user-images.githubusercontent.com/your-screenshot-link2.png)
-
-> *Note: Replace the placeholder image URLs above with actual links to your uploaded screenshots (e.g., in the repo’s "images/" folder or GitHub Issues if hosted elsewhere).*
+![Game Board](https://github.com/hridyansh5492/ladderverse/blob/main/images/Screenshot%202025-04-17%20184340.png)
 
 ---
 
@@ -55,7 +53,7 @@ ladderverse/
 ├── js/ 
     # Game logic scripts 
 ├── *.html 
-# Game pages by player mode 
+    # Game pages by player mode 
 └── README.md
 
 ---
