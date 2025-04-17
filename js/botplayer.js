@@ -160,7 +160,7 @@ function botTurn() {
         play('p1', 'p1sum', 0, num);  
 
         tog++;
-        document.getElementById('tog').innerText = "Bot's Turn: ";
+        document.getElementById('tog').innerText = "Player's Turn : ";
         enableRollButton();  
     }, 1000);
 }
@@ -182,7 +182,7 @@ document.getElementById("diceBtn").addEventListener("click", function () {
     document.getElementById("diceCnt").src = `../images/dice/${num}.svg`;
 
     if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Player's Turn : ";
+        document.getElementById('tog').innerText = "Bot's Turn: ";
         play('p2', 'p2sum', 55, num);
         tog++;
         disableRollButton();  
