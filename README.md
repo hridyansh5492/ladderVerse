@@ -8,7 +8,7 @@ Ladderverse is a browser-based implementation of the classic Snakes and Ladders 
 
 ## 🎮 Features
 
-- **Multiple Game Modes**: Play with 2, 3, or 4 players, or challenge the AI in the bot mode.
+- **Multiple Game Modes**: Play with 2, 3, or 4 players, or challenge the computer in the bot mode.
 - **Interactive Gameplay**: Roll dice, climb ladders, and avoid snakes in a dynamic game environment.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Visual Appeal**: Engaging animations and sound effects enhance the gaming experience.
