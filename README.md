@@ -56,7 +56,7 @@ ladderverse/
     # Game pages by player mode 
 └── README.md
 
----
+----
 
 ## 📌 How to Play
 
