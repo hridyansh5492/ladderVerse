@@ -142,7 +142,7 @@ function play(player, psum, correction, num) {
             alert("Red Won !!")
         }
         else if (player == 'p2') {
-            alert("Yellow Won !!")
+            alert("Green Won !!")
         }
         location.reload()
     }
@@ -195,7 +195,7 @@ document.getElementById("diceBtn").addEventListener("click", function () {
 
 
     if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Yellow's Turn : "
+        document.getElementById('tog').innerText = "Green's Turn : "
         play('p1', 'p1sum', 0, num)
 
     }

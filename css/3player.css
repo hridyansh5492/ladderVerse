@@ -99,23 +99,40 @@ img {
 }
 
 @media (max-width: 1250px) {
-
-  .body{
-    overflow: hidden;
-  }
-
+  
   .board
   {
     resize: both;
   }
-
-  #diceCont {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 500px;
-    left: 280px;
-    font-size: 2rem;
-    z-index: 99;
+  
+  #p1 {
+    position: relative;
+    top: 75px;
+    transition: all linear 0.5s;
+    left: 0px;
+    z-index: 2;
   }
-}
+  
+  #p2 {
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transition: all linear 0.5s;
+    background-color: rgb(243, 181, 46);
+  }
+
+  #p3 {
+    z-index: 2;
+    position: relative;
+    top: -34px;
+    left: 40px;
+    transition: all linear 0.5s;
+    background-color: rgb(0, 171, 23);
+  }
+    #diceCont {
+      position: relative;
+      top: 900px;
+      left: -30px;
+    }
+  }
