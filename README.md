@@ -45,15 +45,15 @@ Experience the game in action by visiting the live demo:
 
 ladderverse/ 
 ├── audio/ 
-    # Sound effects
+    ├── Sound effects
 ├── css/
-    # Stylesheets 
+    ├── Stylesheets 
 ├── images/ 
-    # Game assets 
+    ├── Game assets 
 ├── js/ 
-    # Game logic scripts 
-├── *.html 
-    # Game pages by player mode 
+    ├── Game logic scripts 
+├── index.html 
+├── Game pages by player mode 
 └── README.md
 
 ----
