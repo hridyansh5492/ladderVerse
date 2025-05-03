@@ -41,20 +41,56 @@ Experience the game in action by visiting the live demo:
 
 ---
 
-## 📂 Project Structure
-
-ladderverse/ 
-├── audio/ 
-    ├── Sound effects
-├── css/
-    ├── Stylesheets 
-├── images/ 
-    ├── Game assets 
-├── js/ 
-    ├── Game logic scripts 
-├── index.html 
-├── Game pages by player mode 
-└── README.md
+## 📂 File Structure
+    ├── audio/ 
+        ├── music.mp3
+        ├── rpg-dice-rolling-95182.mp3
+        ├── winharpsichord-39642.mp3
+    ├── css/
+        ├── 2player.css
+        ├── 3player.css
+        ├── 4player.css
+        ├── botplayer.css
+        ├── chooseplayer.css
+        ├── friends.css
+        ├── homepage.css
+        ├── signin.css
+    ├── images/ 
+        ├── images/
+            ├── 0.svg
+            ├── 1.svg
+            ├── 2.svg
+            ├── 3.svg
+            ├── 4.svg
+            ├── 5.svg
+            ├── 6.svg
+        ├── 1goli.svg
+        ├── 2goli.svg
+        ├── 3goli.svg
+        ├── 24745.jpg
+        ├── Screenshot 2025-04-17 184141.png
+        ├── Screenshot 2025-04-17 184340.png
+        ├── Snake.jpg
+        ├── SnakeLadderF.png
+    ├── js/
+        ├── 2player.js
+        ├── 3player.js
+        ├── 4player.js
+        ├── botplayer.js
+        ├── chooseplayer.js
+        ├── friends.js
+        ├── homepage.js
+        ├── signin.js 
+    ├── 2player.html
+    ├── 3player.html
+    ├── 4player.html
+    ├── botplayer.html
+    ├── chooseplayer.html
+    ├── friends.html
+    ├── homepage.html 
+    ├── index.html
+    ├── LICENSE
+    └── README.md
 
 ----
 
